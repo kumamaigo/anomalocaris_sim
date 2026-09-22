@@ -1,11 +1,12 @@
 これはアノマロカリスのシミュレーション
+## anomalo_test3.py :サイン波を再現可能(gemini)
+## anomalo_test4.py :サイン波を再現可能(claude)
 
-anomalo_test3.py
 
 
 
 入れたライブラリは下記(2026/9/22時点)
-(.venv) sanrobo@sanrobo:~/anomalocaris_sim$ pip list
+##(.venv) sanrobo@sanrobo:~/anomalocaris_sim$ pip list
 Package           Version
 ----------------- --------
 absl-py           2.5.0
