@@ -15,7 +15,6 @@ def generate_xml():
     left_fins_xml = ""
     right_fins_xml = ""
     actuators_xml = ""
-
     for i in range(6):
         x_pos_l = X_START - (i * X_STEP)
         x_pos_r = x_pos_l

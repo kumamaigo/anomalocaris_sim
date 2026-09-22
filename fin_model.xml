@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<mujoco model="anomalocaris_flexible">
+  <compiler angle="degree" coordinate="local" inertiafromgeom="true"/>
+  <option timestep="0.001" gravity="0 0 0" density="1000" viscosity="0.002"/>
+  <asset>
+    <mesh name="mesh_a1" file="stl_fin/a1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_b1" file="stl_fin/b1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_c1" file="stl_fin/c1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_a2" file="stl_fin/a2.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_b2" file="stl_fin/b2.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_c2" file="stl_fin/c2.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_a3" file="stl_fin/a3.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_b3" file="stl_fin/b3.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_c3" file="stl_fin/c3.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_a4" file="stl_fin/a4.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_b4" file="stl_fin/b4.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_c4" file="stl_fin/c4.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_a5" file="stl_fin/a5.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_b5" file="stl_fin/b5.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_c5" file="stl_fin/c5.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_a6" file="stl_fin/a6.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_b6" file="stl_fin/b6.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="mesh_c6" file="stl_fin/c6.stl" scale="0.001 0.001 0.001"/>
+  </asset>
+  <worldbody>
+    <light directional="true" diffuse="0.8 0.8 0.8" pos="0 0 3" dir="0 0 -1"/>
+    <body name="torso" pos="0 0 0">
+      <body name="body_a1" pos="-0.17535162016550684 0.38684570439656585 0.0007500000000000006">
+        <joint name="joint_a1" type="hinge" pos="0 0 0" axis="0 1 0.2" range="-35 35" damping="0.05"/>
+        <geom type="mesh" mesh="mesh_a1" pos="0.17535162016550684 -0.38684570439656585 -0.0007500000000000006" mass="0.01" rgba="0.2 0.7 0.4 0.9"/>
+        <body name="body_b1" pos="-0.020530234273274883 0.045326753743490156 0.0">
+          <joint name="joint_b1" type="hinge" pos="0 0 0" axis="0 1 0" stiffness="0.8" damping="0.03"/>
+          <geom type="mesh" mesh="mesh_b1" pos="0.19588185443878173 -0.432172458140056 -0.0007500000000000006" mass="0.008" rgba="0.2 0.8 0.5 0.9"/>
+          <body name="body_c1" pos="-0.020649193191528387 0.04559288444518955 0.0">
+            <joint name="joint_c1" type="hinge" pos="0 0 0" axis="0 1 0" stiffness="0.4" damping="0.02"/>
+            <geom type="mesh" mesh="mesh_c1" pos="0.21653104763031011 -0.47776534258524556 -0.0007500000000000006" mass="0.005" rgba="0.3 0.9 0.6 0.9"/>
+          </body>
+        </body>
+      </body>
+      <body name="body_a2" pos="-0.2515898412068682 0.34224203196742997 0.0007500000000000006">
+        <joint name="joint_a2" type="hinge" pos="0 0 0" axis="0 1 0.2" range="-35 35" damping="0.05"/>
+        <geom type="mesh" mesh="mesh_a2" pos="0.2515898412068682 -0.34224203196742997 -0.0007500000000000006" mass="0.01" rgba="0.2 0.7 0.4 0.9"/>
+        <body name="body_b2" pos="-0.029544110806783375 0.040196071009050705 0.0">
+          <joint name="joint_b2" type="hinge" pos="0 0 0" axis="0 1 0" stiffness="0.8" damping="0.03"/>
+          <geom type="mesh" mesh="mesh_b2" pos="0.2811339520136516 -0.3824381029764807 -0.0007500000000000006" mass="0.008" rgba="0.2 0.8 0.5 0.9"/>
+          <body name="body_c2" pos="-0.029547792434692077 0.04022441660563231 0.0">
+            <joint name="joint_c2" type="hinge" pos="0 0 0" axis="0 1 0" stiffness="0.4" damping="0.02"/>
+            <geom type="mesh" mesh="mesh_c2" pos="0.3106817444483437 -0.422662519582113 -0.0007500000000000006" mass="0.005" rgba="0.3 0.9 0.6 0.9"/>
+          </body>
+        </body>
+      </body>
+      <body name="body_a3" pos="-0.31688497135095467 0.2828735335500617 0.0007500000000000006">
+        <joint name="joint_a3" type="hinge" pos="0 0 0" axis="0 1 0.2" range="-35 35" damping="0.05"/>
+        <geom type="mesh" mesh="mesh_a3" pos="0.31688497135095467 -0.2828735335500617 -0.0007500000000000006" mass="0.01" rgba="0.2 0.7 0.4 0.9"/>
+        <body name="body_b3" pos="-0.03721422756261894 0.0332292104888382 0.0">
+          <joint name="joint_b3" type="hinge" pos="0 0 0" axis="0 1 0" stiffness="0.8" damping="0.03"/>
+          <geom type="mesh" mesh="mesh_b3" pos="0.3540991989135736 -0.3161027440388999 -0.0007500000000000006" mass="0.008" rgba="0.2 0.8 0.5 0.9"/>
+          <body name="body_c3" pos="-0.037226130803426405 0.03323930028279609 0.0">
+            <joint name="joint_c3" type="hinge" pos="0 0 0" axis="0 1 0" stiffness="0.4" damping="0.02"/>
+            <geom type="mesh" mesh="mesh_c3" pos="0.391325329717 -0.34934204432169597 -0.0007500000000000006" mass="0.005" rgba="0.3 0.9 0.6 0.9"/>
+          </body>
+        </body>
+      </body>
+      <body name="body_a4" pos="-0.3688680654672475 0.21147419301872586 0.0007500000000000006">
+        <joint name="joint_a4" type="hinge" pos="0 0 0" axis="0 1 0.2" range="-35 35" damping="0.05"/>
+        <geom type="mesh" mesh="mesh_a4" pos="0.3688680654672475 -0.21147419301872586 -0.0007500000000000006" mass="0.01" rgba="0.2 0.7 0.4 0.9"/>
+        <body name="body_b4" pos="-0.04290647626045396 0.02463030514513226 0.0">
+          <joint name="joint_b4" type="hinge" pos="0 0 0" axis="0 1 0" stiffness="0.8" damping="0.03"/>
+          <geom type="mesh" mesh="mesh_b4" pos="0.41177454172770145 -0.23610449816385812 -0.0007500000000000006" mass="0.008" rgba="0.2 0.8 0.5 0.9"/>
+          <body name="body_c4" pos="-0.043295150502523916 0.024817547671000945 0.0">
+            <joint name="joint_c4" type="hinge" pos="0 0 0" axis="0 1 0" stiffness="0.4" damping="0.02"/>
+            <geom type="mesh" mesh="mesh_c4" pos="0.45506969223022536 -0.26092204583485906 -0.0007500000000000006" mass="0.005" rgba="0.3 0.9 0.6 0.9"/>
+          </body>
+        </body>
+      </body>
+      <body name="body_a5" pos="-0.40418385594685835 0.13056494344075528 0.0007500000000000006">
+        <joint name="joint_a5" type="hinge" pos="0 0 0" axis="0 1 0.2" range="-35 35" damping="0.05"/>
+        <geom type="mesh" mesh="mesh_a5" pos="0.40418385594685835 -0.13056494344075528 -0.0007500000000000006" mass="0.01" rgba="0.2 0.7 0.4 0.9"/>
+        <body name="body_b5" pos="-0.04747329734923389 0.015330120141165332 0.0">
+          <joint name="joint_b5" type="hinge" pos="0 0 0" axis="0 1 0" stiffness="0.8" damping="0.03"/>
+          <geom type="mesh" mesh="mesh_b5" pos="0.45165715329609224 -0.14589506358192061 -0.0007500000000000006" mass="0.008" rgba="0.2 0.8 0.5 0.9"/>
+          <body name="body_c5" pos="-0.04748724898080997 0.015332112963238081 0.0">
+            <joint name="joint_c5" type="hinge" pos="0 0 0" axis="0 1 0" stiffness="0.4" damping="0.02"/>
+            <geom type="mesh" mesh="mesh_c5" pos="0.4991444022769022 -0.1612271765451587 -0.0007500000000000006" mass="0.005" rgba="0.3 0.9 0.6 0.9"/>
+          </body>
+        </body>
+      </body>
+      <body name="body_a6" pos="-0.4228089749831565 0.0441903125728054 0.0007500000000000006">
+        <joint name="joint_a6" type="hinge" pos="0 0 0" axis="0 1 0.2" range="-35 35" damping="0.05"/>
+        <geom type="mesh" mesh="mesh_a6" pos="0.4228089749831565 -0.0441903125728054 -0.0007500000000000006" mass="0.01" rgba="0.2 0.7 0.4 0.9"/>
+        <body name="body_b6" pos="-0.04923843916072429 0.005175861509720332 0.0">
+          <joint name="joint_b6" type="hinge" pos="0 0 0" axis="0 1 0" stiffness="0.8" damping="0.03"/>
+          <geom type="mesh" mesh="mesh_b6" pos="0.4720474141438808 -0.049366174082525735 -0.0007500000000000006" mass="0.008" rgba="0.2 0.8 0.5 0.9"/>
+          <body name="body_c6" pos="-0.04963226503314372 0.005185888940637838 0.0">
+            <joint name="joint_c6" type="hinge" pos="0 0 0" axis="0 1 0" stiffness="0.4" damping="0.02"/>
+            <geom type="mesh" mesh="mesh_c6" pos="0.5216796791770245 -0.05455206302316357 -0.0007500000000000006" mass="0.005" rgba="0.3 0.9 0.6 0.9"/>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="motor_1" joint="joint_a1" gear="1.0"/>
+    <motor name="motor_2" joint="joint_a2" gear="1.0"/>
+    <motor name="motor_3" joint="joint_a3" gear="1.0"/>
+    <motor name="motor_4" joint="joint_a4" gear="1.0"/>
+    <motor name="motor_5" joint="joint_a5" gear="1.0"/>
+    <motor name="motor_6" joint="joint_a6" gear="1.0"/>
+  </actuator>
+</mujoco>

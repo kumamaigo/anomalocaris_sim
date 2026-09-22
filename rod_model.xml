@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<mujoco model="anomalocaris_rods">
+  <compiler angle="degree" coordinate="local"/>
+  <option timestep="0.001" gravity="0 0 0" density="1000" viscosity="0.002"/>
+  <worldbody>
+    <light directional="true" diffuse="0.8 0.8 0.8" pos="0 0 3" dir="0 0 -1"/>
+    <body name="torso" pos="0 0 0">
+      <geom type="box" size="0.25 0.04 0.03" rgba="0.2 0.2 0.2 1" mass="1.0"/>
+      <body name="rod_L_1" pos="0.200 0.04 0">
+        <joint name="joint_L_1" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.05"/>
+        <geom type="capsule" fromto="0 0 0 0 0.15 0" size="0.005" rgba="1 0.2 0.2 1" mass="0.01"/>
+      </body>
+      <body name="rod_R_1" pos="0.200 -0.04 0">
+        <joint name="joint_R_1" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.05"/>
+        <geom type="capsule" fromto="0 0 0 0 -0.15 0" size="0.005" rgba="1 0.2 0.2 1" mass="0.01"/>
+      </body>
+      <body name="rod_L_2" pos="0.120 0.04 0">
+        <joint name="joint_L_2" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.05"/>
+        <geom type="capsule" fromto="0 0 0 0 0.15 0" size="0.005" rgba="1 0.2 0.2 1" mass="0.01"/>
+      </body>
+      <body name="rod_R_2" pos="0.120 -0.04 0">
+        <joint name="joint_R_2" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.05"/>
+        <geom type="capsule" fromto="0 0 0 0 -0.15 0" size="0.005" rgba="1 0.2 0.2 1" mass="0.01"/>
+      </body>
+      <body name="rod_L_3" pos="0.040 0.04 0">
+        <joint name="joint_L_3" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.05"/>
+        <geom type="capsule" fromto="0 0 0 0 0.15 0" size="0.005" rgba="1 0.2 0.2 1" mass="0.01"/>
+      </body>
+      <body name="rod_R_3" pos="0.040 -0.04 0">
+        <joint name="joint_R_3" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.05"/>
+        <geom type="capsule" fromto="0 0 0 0 -0.15 0" size="0.005" rgba="1 0.2 0.2 1" mass="0.01"/>
+      </body>
+      <body name="rod_L_4" pos="-0.040 0.04 0">
+        <joint name="joint_L_4" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.05"/>
+        <geom type="capsule" fromto="0 0 0 0 0.15 0" size="0.005" rgba="1 0.2 0.2 1" mass="0.01"/>
+      </body>
+      <body name="rod_R_4" pos="-0.040 -0.04 0">
+        <joint name="joint_R_4" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.05"/>
+        <geom type="capsule" fromto="0 0 0 0 -0.15 0" size="0.005" rgba="1 0.2 0.2 1" mass="0.01"/>
+      </body>
+      <body name="rod_L_5" pos="-0.120 0.04 0">
+        <joint name="joint_L_5" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.05"/>
+        <geom type="capsule" fromto="0 0 0 0 0.15 0" size="0.005" rgba="1 0.2 0.2 1" mass="0.01"/>
+      </body>
+      <body name="rod_R_5" pos="-0.120 -0.04 0">
+        <joint name="joint_R_5" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.05"/>
+        <geom type="capsule" fromto="0 0 0 0 -0.15 0" size="0.005" rgba="1 0.2 0.2 1" mass="0.01"/>
+      </body>
+      <body name="rod_L_6" pos="-0.200 0.04 0">
+        <joint name="joint_L_6" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.05"/>
+        <geom type="capsule" fromto="0 0 0 0 0.15 0" size="0.005" rgba="1 0.2 0.2 1" mass="0.01"/>
+      </body>
+      <body name="rod_R_6" pos="-0.200 -0.04 0">
+        <joint name="joint_R_6" type="hinge" pos="0 0 0" axis="1 0 0" range="-45 45" damping="0.05"/>
+        <geom type="capsule" fromto="0 0 0 0 -0.15 0" size="0.005" rgba="1 0.2 0.2 1" mass="0.01"/>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="motor_L_1" joint="joint_L_1" kp="10.0"/>
+    <position name="motor_R_1" joint="joint_R_1" kp="10.0"/>
+    <position name="motor_L_2" joint="joint_L_2" kp="10.0"/>
+    <position name="motor_R_2" joint="joint_R_2" kp="10.0"/>
+    <position name="motor_L_3" joint="joint_L_3" kp="10.0"/>
+    <position name="motor_R_3" joint="joint_R_3" kp="10.0"/>
+    <position name="motor_L_4" joint="joint_L_4" kp="10.0"/>
+    <position name="motor_R_4" joint="joint_R_4" kp="10.0"/>
+    <position name="motor_L_5" joint="joint_L_5" kp="10.0"/>
+    <position name="motor_R_5" joint="joint_R_5" kp="10.0"/>
+    <position name="motor_L_6" joint="joint_L_6" kp="10.0"/>
+    <position name="motor_R_6" joint="joint_R_6" kp="10.0"/>
+  </actuator>
+</mujoco>
