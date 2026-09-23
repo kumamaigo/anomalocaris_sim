@@ -8,3 +8,8 @@ MUJOCO_LOG.TXT
 
 # 3Dアセットファイル
 assets/*.stl
+
+# シミュレーションデータと出力グラフを除外
+*.csv
+*.png
+

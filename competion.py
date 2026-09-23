@@ -2,14 +2,17 @@ import os
 import matplotlib.pyplot as plt
 import pandas as pd
 
-file_wave1 = "sim_result_wave_1.0.csv"
-file_wave2 = "sim_result_wave_2.0.csv"
+# 💡 日本語文字化け対策（Windows標準フォントの指定）
+plt.rcParams["font.family"] = "MS Gothic"
+
+file_wave1 = "sim( 40.0 _ 3 _ 6 _ 1.0).csv"
+file_wave2 = "sim( 25.0 _ 3 _ 6 _ 1.0).csv"
 
 if not (os.path.exists(file_wave1) and os.path.exists(file_wave2)):
-    print(
-        "❌ CSVファイルが見つかりません。2パターンのシミュレーションを完了させてください。"
-    )
-    exit()
+  print(
+      "❌ CSVファイルが見つかりません。2パターンのシミュレーションを完了させてください。"
+  )
+  exit()
 
 # CSV読み込み
 df1 = pd.read_csv(file_wave1)
@@ -22,21 +25,21 @@ plt.figure(figsize=(10, 5))
 plt.plot(
     df1["time"],
     df1["vel_x_cms"],
-    label="Wave = 1.0 (1波長)",
+    label=f"{file_wave1}",
     color="blue",
     linewidth=1.5,
 )
 plt.plot(
     df2["time"],
     df2["vel_x_cms"],
-    label="Wave = 2.0 (2波長)",
+    label=f"{file_wave2}",
     color="red",
     linewidth=1.5,
 )
 
 # グラフ装飾
 plt.title(
-    "Anomalocaris Swimming Velocity Comparison (6 Fins)",
+    "振れ幅:25.0[deg]  上下運動の周波数のみ比較  ヒレの数:6 形成波:1",
     fontsize=14,
     fontweight="bold",
 )
