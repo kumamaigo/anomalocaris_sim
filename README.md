@@ -3,6 +3,8 @@
 ## anomalo_test4.py :サイン波を再現可能(claude)
 
 
+# venvの起動方法
+window → .\venv\Scripts\Activate.ps1
 
 
 入れたライブラリは下記(2026/9/22時点)
