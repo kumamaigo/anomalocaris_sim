@@ -1,13 +1,23 @@
 これはアノマロカリスのシミュレーション
+
 ## anomalo_test3.py :サイン波を再現可能(gemini)
 ## anomalo_test4.py :サイン波を再現可能(claude)
+
+# venvの導入方法
+anomalocarsi_sim内の直下に下記コマンドを打って確認
 
 
 # venvの起動方法
 window → .\venv\Scripts\Activate.ps1
 
+# 実行方法
+Linux & Windows → python ○○.py
+で可能
 
-入れたライブラリは下記(2026/9/22時点)
+# venv内に入れるライブラリ
+pip install mujoco
+
+# 入っているライブラリは下記(2026/9/22時点)
 ##(.venv) sanrobo@sanrobo:~/anomalocaris_sim$ pip list
 Package           Version
 ----------------- --------
